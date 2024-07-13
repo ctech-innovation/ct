@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ctech Innovation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+
+    <body>
+        <header>
+    		<div class="container">
+    		<div class="logo" id="logo">
+    			<img class="img" id="img" src="img/newctech.png" onclick="window.location.href='#home';"> 
+    			<h2 class="h2" id="h2">CTECH INNOVATION</h2>
+    		</div>
+    			<div class="nav" id="nav">
+    				<ul class="ul" id="ul">
+    					<li class="li" id="li"> <a class="a-nav-link" id="a" href="#home"> HOME </a> </li>
+    					<li class="li" id="li"> <a class="a-nav-link" id="a" href="#services"> SERVICES </a> </li>
+    					<li class="li" id="li"> <a class="a-nav-link" id="a" href="#about"> ABOUT </a> </li>
+    					<li class="li" id="li"> <a class="a-nav-link" id="a" href="#contact"> CONTACT </a> </li>
+    				</ul>
+    			</div>
+                <div id="nav-mobile-menu" class="nav-mobile">
+                    <div class="icon" id="icon"> <i onclick="showMenu()" class="fas fa-bars icon"></i> </div>
+                </div>
+
+    		</div>
+    </header>
+
+    <!-----------------------Start Mobile Drawer------------------------------>
+    <div id="drawer" class="drawer">
+        <div class="box-icon">
+            <div class="icon-container">
+                <i onclick="hideDrawer()" class="fas fa-times"></i>
+            </div>
+        </div>
+        <a href="#home">HOME</a>
+        <a href="#services">SERVICES</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+    <!-----------------------End mobile Drawer-------------------------------->
+
+    <div class="video">
+        <video autoplay muted loop id="background-video">
+            <source src="img/dark.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!----------------------3D BOXES----------------->
+    <!------------------------Start Desktop Popup----------------------------->
+    <div id="desktop-popup" class="desktop-popup">
+        <div class="container">
+            <div class="icon-container">
+                <div class="icon">
+                    <i onclick="hidePopup()" class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <h3>Tell us about your project, please provide us with the following</h3>
+        <div class="input-container">
+                    <input type="text" name="project_name" class="text" id="text" placeholder="Enter your project name" required><br>
+            	
+            		<input type="text" name="project_description" class="text" id="text" placeholder="Enter your project description" required><br>
+            	
+            		<input type="text" name="services_required" class="text" id="text" placeholder="Enter your requirements" required><br>
+
+            		<input type="text" name="project_timeline" class="text" id="text" placeholder="Enter your project timeline" required><br>
+
+            		<input type="text" name="budget_range" class="text" id="text" placeholder="Enter your budget range" required><br>
+
+            		<input type="text" name="full_names" id="text" class="text" placeholder="Enter your full_names" required><br>
+
+            		<input type="email" name="email" class="text" id="text" placeholder="Enter your email" required><br>
+
+            		<input type="text" name="phone" class="text" id="text" placeholder="Enter your phone number" required><br>
+            	
+            		<textarea class="text" id="textarea" name="additional_info" required placeholder="Enter any other details you want to provide"></textarea>
+
+            			<div class="btn-cont" id="btn-cont">
+            				<input class="btn" id="btn" type="submit" name="submit" value="Submit">
+            			</div>
+
+            	</div>
+        </div>
+    </div>
+    <!------------------------End Desktop Popup------------------------------->
+
+
+    <!------------------------Start Mobile Popup------------------------------>
+    <div id="mobile-popup" class="mobile-popup">
+        <div class="icon-container">
+            <div class="icon">
+                <i onclick="hidePopupMobile()" class="fas fa-times"></i>
+            </div>
+        </div>
+
+        <h5>Tell us about your project</h5>
+
+        <div class="input-container">
+            <input type="text" name="project_name" class="text" id="text" placeholder="Enter your project name" required><br>
+        
+            <input type="text" name="project_description" class="text" id="text" placeholder="Enter your project description" required><br>
+        
+            <input type="text" name="services_required" class="text" id="text" placeholder="Enter your requirements" required><br>
+
+            <input type="text" name="project_timeline" class="text" id="text" placeholder="Enter your project timeline" required><br>
+
+            <input type="text" name="budget_range" class="text" id="text" placeholder="Enter your budget range" required><br>
+
+            <input type="text" name="full_names" id="text" class="text" placeholder="Enter your full_names" required><br>
+
+            <input type="email" name="email" class="text" id="text" placeholder="Enter your email" required><br>
+
+            <input type="text" name="phone" class="text" id="text" placeholder="Enter your phone number" required><br>
+        
+            <textarea class="text" id="textarea" name="additional_info" required placeholder="Enter any other details you want to provide"></textarea>
+
+                <div class="btn-cont" id="btn-cont">
+                    <input class="btn" id="btn" type="submit" name="submit" value="Submit">
+                </div>
+
+        </div>
+    </div>
+    <!------------------------End Mobile Popup--------------------------------->
+
+    <section id="home" class="home">
+        <div class="container">
+            <h2 class="h2" id="h2">Build your next idea and <br> ship your dream site </h2>
+            <div class="par" id="par"> <p class="p" id="p">We are dedicated to transforming ideas into cutting-edge technological solutions. As a leading provider of IT and web services, we empower businesses with innovative, reliable, and customized technology solutions designed to meet the unique needs of our clients.</p> 
+            </div>
+
+            <div class="box-cont" id="box-cont">
+                <div class="title" id="title">
+                    <a class="a" id="p" href="#contact">REACH OUT</a>
+                    <!-----<a class="a" id="p" href="practice.html">PRACTICE</a>-- ---->
+
+                </div>
+            </div>
+
+            <div class="btn-box" id="btn-box">
+                <input class="submit" id="submit" type="submit" name="submit" value="SEE MORE" onclick="window.location.href='#about';">
+               <div class="desktop-btn"> <input class="submit" id="submit-2" type="submit" name="submit" value="GET QUOTE" onclick="showPopup()"> </div>
+                <div class="mobile-btn" id="mobile-btn">
+                    <input class="submit" id="submit-2" type="submit" name="submit" value="GET QUOTE" onclick="showPopupMobile()">
+                </div>
+            </div>
+
+            <div class="box-arrow">
+                <div class="container" id="container-box-arrow-down">
+                     <i class="fas fa-arrow-circle-down"></i>
+                </div>
+            </div>
+
+            <div class="main-container">
+                <div class="group" id="container-3d-show-about">
+                    Ctech Innovation
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!------------------Section---------------->
+
+    <div class="group-desktop" id="group-desktop">
+        <section class="section services">
+
+        </section>
+
+        <section class="services" id="services">
+    
+              <div class="h2-group"> <h2 class="h2" id="h2">Our Services</h2> </div>
+              <div class="row1">
+                    <div class="box1">
+                        <h3>Custom Software Development</h3>
+                        <p>Tailored solutions designed to meet specific business need, often including
+                        web applications, mobile apps, desktop software, and enterprise solutions.</p>
+                    </div>
+                    <div class="box2">
+                        <h3> Web Development </h3>
+                        <p> Our Expert team creates stunning corporate website, an e-commerce platform, 
+                        or a dynamic web application, we deliver solutions that captivate and engage. </p>
+                    </div>
+              </div>
+              <div class="row2">
+                <div class="box1">
+                    <h3> Mobile App Development </h3>
+                    <p> Take your business mobile with our custom mobile 
+                        app development services. From concept to launch.</p>
+                </div>
+                <div class="box2">
+                    <img src="img/cris.jpg">
+                </div>
+                <div class="box3">
+                    <h3> UI/UX Design </h3>
+                    <p> Enhance user satisfaction and retention with our UI/UX design expertise. 
+                        Our team creates seamless and visually appealing interfaces.</p>
+                </div>
+                </div>
+                <div class="row3">
+                    <div class="box1">
+                        <h3>Technical Support</h3>
+                        <p>Providing assistance and troubleshooting services to resolve 
+                            issues related to software, hardware, or IT infrastructure</p>
+                    </div>
+                    <div class="box2">
+                        <h3> Website Maintainance </h3>
+                       <p> Includes regular updates, bug fixes, and content management to 
+                        keep websites functioning properly and up-to-date. </p>
+                    </div>
+                    
+                </div>
+                <div class="row4">
+                    <div class="box1">
+                        <h3> Website Hosting </h3>
+                        <p> Maintenance of website on a server accessible via internet, 
+                        provide server space, bandwidth and infrastructure. </p>
+
+                        <div class="box-arrow">
+                            <div class="container" id="container-box-arrow-down">
+                                 <i class="fa fa-server"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="box2">
+                        <h3> Graphical Design </h3>
+                        <p> Create visual concepts and artwork to communicate messages effectively.
+                         designs like logos, posters, brochures, and other marketing material </p>
+
+                         <div class="box-arrow">
+                            <div class="container" id="container-box-arrow-down">
+                                 <i class="fa fa-gamepad"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box3">
+                        <h3> Advertisement </h3>
+                        <p> Post your business to our website for adverisement, and receive customers via your social media handle </p>
+                    
+                        <div class="box-arrow">
+                            <div class="container" id="container-box-arrow-down">
+                                 <i class="fa fa-store"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+
+            <div class="container" id="container">
+                <div class="service" id="service">
+                   
+
+    
+                </div>
+            </div>
+    
+                    <div class="container" id="container">
+                <div class="service" id="service">
+                    
+                </div>
+          
+            </div>
+
+            <div class="clients">
+
+                <h2>Clients</h2>
+                <p>We provide the best service to our beloved clients, and ensure quality products are delivered</p>
+                <p class="p1">We are proud to collaborate with a diverse range of clients from various industries, each bringing 
+                    unique needs and opportunities. <br> Our portfolio includes reputable brands and dynamic businesses that
+                     trust us to deliver innovative solutions <br> tailored to their specific goals.</p>
+
+                     <div class="count-container">
+                        <div class="counter" id="counter">0</div>
+                    </div>
+                     
+                     <div class="container-clients">
+                        <div class="box1">
+                            
+                            <div class="content-box" id="group1">
+                                <div class="head">
+                                    <div class="image"> <img src="img/mma.jpeg"> </div>
+                                </div>
+                                <p>MM APPAREL</p>
+                            </div>
+                            <div class="content-box" id="group2">
+                                <div class="head">
+                                    <div class="image"> <img src="img/cris1.png"> </div>
+                                </div>
+                                <p>AD MONTIMEN</p>
+                            </div>
+                            <div class="content-box" id="group3">
+                                <div class="head">
+                                    <div class="image"> <img src="img/mma5.png"> </div>
+                                </div>
+                                <p>BEAUTY SALOON</p>
+                            </div>
+                            <div class="content-box" id="group4">
+                                <div class="head">
+                                    <div class="image"> <img src="img/mma6.png"> </div>
+                                </div>
+                                <p>MD BARBER</p>
+                            </div>
+                            <div class="content-box" id="group5">
+                                <div class="head">
+                                    <div class="image"> <img src="img/wall2.jpg"> </div>
+                                </div>
+                                <p>BOCHUM SC</p>
+                            </div>
+
+                        </div>
+
+                     </div>
+
+                     
+            </div>
+            
+        </section>
+        </div>
+
+            <!----- SECTION MOBILE----------------------------------------------------------------->
+    <div class="group-mobile">
+        <section class="section services">
+
+        </section>
+        <section class="services">
+    
+              <h2>OUR SERVICES</h2>
+            <div class="container">
+    
+                <div class="service">
+                    <h3>Custom Software Development</h3>
+                    <p>Tailored solutions designed to meet specific business need, often including
+                    web applications, mobile apps, desktop software, and enterprise solutions.</p>
+    
+                </div>
+                <div class="service">
+    
+                       <h3> Web Development </h3>
+                       <p> Our Expert team creates stunning corporate website, an e-commerce platform, or a dynamic web application, we deliver solutions that captivate and engage. </p>
+    
+                </div>
+
+            </div>
+    
+                <div class="container">
+                <div class="service">
+                    <h3>Technical Support</h3>
+                    <p>Providing assistance and troubleshooting services to resolve issues related to software, hardware, or IT infrastructure</p>
+                </div>
+                <div class="service">
+    
+                    <h3> Mobile App Development </h3>
+                    <p> Take your business mobile with our custom mobile app development services. From concept to launch.</p>
+    
+                </div>
+                </div>
+
+                <div class="container">
+                <div class="service">
+                       <h3> Website Maintainance </h3>
+                       <p> Includes regular updates, bug fixes, and content management to keep websites functioning properly and up-to-date. </p>
+                </div>
+                <div class="service">
+                    <h3> Website Hosting </h3>
+                    <p> Maintenance of website on a server accessible via internet, provide server space, bandwidth and infrastructure. </p>
+                </div>
+                </div>
+                <br>
+    
+            <div class="OurClients">
+                    <h2>Our Clients</h2> <br>
+                    <p> We are proud to collaborate with a diverse range of clients from various industries, each bringing unique needs and opportunities. Our portfolio includes reputable brands and dynamic businesses that trust us to deliver innovative solutions tailored to their specific goals. </p>
+            </div>
+
+            <div class="main-cont">
+                <div class="cli">
+                    <div class="cl">
+                        <img src="img/mma.jpeg">
+                    </div>
+                    <div class="cl">
+                        <img src="img/cris1.png">
+                    </div>
+                    <div class="cl">
+                        <img src="img/mma3.png">
+                    </div>
+                </div>
+                <div class="cli">
+                    <div class="cl">
+                        <img src="img/wall1.jpg">
+                    </div>
+                    <div class="cl">
+                        <img src="img/mma5.png">
+                    </div>
+                    <div class="cl">
+                        <img src="img/mma6.png">
+                    </div>
+                </div>
+            </div>
+            
+    
+        </section>
+        </div>
+    
+        <!------END SECTION MOBILE------------------------------------------------------------->
+
+<section class="about" id="about">
+    	
+    <div class="h2-c"><h2 class="h2" id="h2">ABOUT US</h2> </div>
+    <div class="cover-cont" id="cover-cont">
+    <div class="box-pic" id="box-pic">
+        <img src="img/tech2.jpg">
+    </div>
+<!---------------------------------------------Desktop----------------------------->
+            <div id="container" class="container">
+                    <p class="p">Founded in 2023, Ctech Innovation is a pioneering firm at the forefront of digital 
+                        transformation and creative solutions. Specializing in software development, we craft cutting-edge applications 
+                        tailored to meet the diverse needs of modern businesses. Our expertise spans web development, mobile app development, 
+                        and UI/UX design, ensuring intuitive and seamless user experiences across platforms. In addition to our software prowess,
+                         CTech Innovation offers comprehensive services including company registration, personalized poster designs, and 
+                         bespoke company logos. We are dedicated to fostering innovation and empowering businesses to thrive in an increasingly 
+                         digital world. At Ctech Innovation, we combine technical excellence with a passion for creativity, delivering solutions 
+                         that elevate brands and drive sustainable growth. <br><br> Our mission is to develop cutting-edge technologies 
+                         that address real-world challenges. We are dedicated to delivering high-quality, innovative solutions 
+                         that meet the evolving needs of our clients. By leveraging our expertise and resources, we aim to drive 
+                         technological advancements across various industries, including healthcare, energy, manufacturing, and more. 
+                         Our focus is on sustainable development, ensuring that our innovations contribute to a better, more sustainable
+                        future. <br><br> At Ctech Innovation, our vision is to be at the forefront of technological progress, 
+                        consistently pushing the boundaries of what is possible. We strive to create a future where technology 
+                        seamlessly integrates with everyday life, enhancing experiences and improving the quality of life globally. 
+                        Our goal is to be a catalyst for change, fostering a culture of innovation that inspires individuals and 
+                        organizations to think beyond conventional limits. <br><br> We are a fast-growing company, but we have never lost 
+                        sight of our core values. We believe in collaboration, innovation, and customer satisfaction. We are always 
+                        looking for new ways to improve our products and services.
+                        
+                        </p>
+                    
+                    <div class="main" id="main">
+
+                            <div class="main1-1" id="main1-1">
+                                <div class="tg1" id="tg1">
+                                    <div class="apple">
+                                    <i class="fab fa-android"></i>
+                                    </div>
+                                    <p class="p1" id="p1">Software Development</p>
+                                </div>
+                                <p class="p" id="p"> HTML, CSS, Javascript, PHP, MYSQL, Visual Studio</p>
+                            </div>
+
+                            <div class="main1-1" id="main1-1">
+                                <div class="tg1" id="tg1">
+                                    <div class="apple">
+                                    <i class="fas fa-bell"></i>
+                                    </div>
+                                    <p class="p1" id="p1">Technical Support</p>
+                                </div>
+                                <p class="p" id="p"> LAN and DESKTOP support together with troubleshooting basic IT issues</p>
+                            </div>
+
+                    </div>		
+           </div>
+   </div>
+   <!--------------------------------End Desktop ---------------------->
+
+   <div class="mobile-about">
+    <p class="p" id="p">Founded in 2023, Ctech Innovation is a pioneering firm at the forefront of digital transformation and creative solutions. Specializing in software development, we craft cutting-edge applications tailored to meet the diverse needs of modern businesses. Our expertise spans web development, mobile app development, and UI/UX design, ensuring intuitive and seamless user experiences across platforms. In addition to our software prowess, CTech Innovation offers comprehensive services including company registration, personalized poster designs, and bespoke company logos. We are dedicated to fostering innovation and empowering businesses to thrive in an increasingly digital world. At Ctech Innovation, we combine technical excellence with a passion for creativity, delivering solutions that elevate brands and drive sustainable growth.</p>
+    <br>
+    <p class="p" id="p">Our mission is to develop cutting-edge technologies that address real-world challenges. We are dedicated to delivering high-quality, innovative solutions that meet the evolving needs of our clients. By leveraging our expertise and resources, we aim to drive technological advancements across various industries, including healthcare, energy, manufacturing, and more. Our focus is on sustainable development, ensuring that our innovations contribute to a better, more sustainable future.</p>
+    <br>
+    <p class="p" id="p">At Ctech Innovation, our vision is to be at the forefront of technological progress, consistently pushing the boundaries of what is possible. We strive to create a future where technology seamlessly integrates with everyday life, enhancing experiences and improving the quality of life globally. Our goal is to be a catalyst for change, fostering a culture of innovation that inspires individuals and organizations to think beyond conventional limits.</p>
+    <br>
+   </div>
+
+</section>
+
+<section class="contact" id="contact">
+    <div class="cont-h2"><h2>GET IN TOUCH WITH US</h2></div>
+    <!------------------------------Desktop Contacts-------------------------------->
+
+    <div id="container" class="container">
+
+        <form method="post" action="save_data.php">
+
+            <div class="cont1" id="cont1">
+
+                <div class="cont1-space" id="cont1-space"></div>
+        
+                <input type="text" class="text" name="firstname" id="text" placeholder="Enter your first name" required><br>
+            
+                <input type="text" class="text" name="lastname" id="text" placeholder="Enter your last name" required><br>
+            
+                <input type="email" class="text" name="email" id="text" placeholder="Enter your email" required><br>
+            
+                <textarea id="textarea" class="textarea" name="message" required placeholder="Enter your message"></textarea>
+
+                    <div class="btn-cont" id="btn-cont">
+                        <input id="btn" class="btn" type="submit" name="submit" value="Submit">
+                    </div>
+
+            </div>
+
+        </form>
+
+        <div class="cont2" id="cont2">
+            <h3>Have any question?</h3>
+
+            <div class="header1" id="header1">
+                <div class="header1-1" id="header1-1">
+                    
+                        <p class="p1" id="p1"> 
+                            Phone: +27 780 219 816 <br><br>
+                            Email: info@ctech-innovation.co.za <br> <br>
+                            Website: www.ctech-innovation.co.za <br> <br>
+                            Address: 257 Kopanong Section <br> 
+                            Pretoria <br> 
+                            2889 <br> 
+                            South Africa 
+                        </p>
+                </div>
+                
+                <p class="pp">Reach Out to us via Social Media</p>
+
+                <div class="icons">
+                    <div class="icon1">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="icon1">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="icon1">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+            <div class="cont3" id="cont3">
+                <img class="img" id="img" src="img/cont2.jpg">
+            </div>
+
+    </div>
+    <!----------------------------------------End Desktop Contacts------------------------>
+
+    <div class="mobile-contact">
+
+        <div class="box1">
+            <h3>Have any question?</h3>
+            <p>
+                Phone: 078 021 9816<br>
+                Email: info@ctech-innovation.co.za<br>
+                Address: 257 Kopanong Section<br>
+                Pretoria<br>
+                1632
+            </p>
+        </div>
+
+    </div>
+
+    <div class="mobile-contact2">
+        <p>Write us a message</p>
+        <input type="text" class="text" name="firstname" placeholder="Enter your first name" required>
+        <input type="text" class="text" name="lastname" placeholder="Enter your last name" required>
+        <input type="text" class="text" name="email" placeholder="Enter your email" required>
+        <textarea class="textarea" name="message" required placeholder="Enter your message"></textarea>
+        <div class="btn-cont" id="btn-cont">
+            <input id="btn" class="btn" type="submit" name="submit" value="Submit">
+        </div>
+    </div>
+
+    <div class="mobile-contact3">
+
+        <div class="image">
+            <img src="img/cont1.jpg">
+        </div>
+        
+    </div>
+
+</section>
+
+    <footer>
+
+        <!-------------------------------Desktop Footer----------------------------------------------------------->
+        <div class="desktop-footer">
+
+        <div class="input-container">
+            <input type="text" class="text" name="firstname" id="text" placeholder="Enter your email" required>
+            <input type="submit" class="submit" name="submit" value="Subscribe">
+        </div>
+
+        <!------------------------Footer Content------------------------------------->
+
+        <div class="container">
+
+            <div class="contact">
+
+                <h2>Ctech Innovation</h2>
+
+                <ul>
+                    <li> <a href="#">257 Kopanong Section</a> </li>
+                    <li> <a href="#">Pretoria</a> </li>
+                    <li> <a href="#">2889</a> </li>
+                    <li> <a href="#">078 021 9816</a> </li>
+                    <li> <a href="#">info@ctech-innovation.co.za</a> </li>
+                </ul>
+
+            </div>
+        
+            <div class="links">
+                <h2>Quick Links</h2>
+
+                <ul>
+                    <li><a href="#home"> HOME</a> </li>
+                    <li><a href="#services"> SERVICES</a> </li>
+                    <li><a href="#about"> ABOUT</a> </li>
+                    <li><a href="#contact"> CONTACT</a> </li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <h2>Social Media</h2>
+
+                <ul>
+                    <li> <a href="#whatsapp">WHATSAPP</a> </li>
+                    <li> <a href="#whatsapp">FACEBOOK</a> </li>
+                    <li> <a href="#whatsapp">INSTAGRAM</a> </li>
+                    <li> <a href="#whatsapp">LINKEDIN</a> </li>
+                </ul>
+            </div>
+
+            <div class="joinus">
+                <h2>Join Us</h2>
+
+                <ul>
+                    <li> <a href="#whatsapp">CAREERS</a> </li>
+                    <li> <a href="#whatsapp">LEARN</a> </li>
+                    <li> <a href="#whatsapp">ADVERTISEMENT</a> </li>
+                    <li> <a href="#whatsapp">OUR TEAM</a> </li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+        <!-----------------------Copyright------------------------------------------->
+
+        <div class="copyright">
+            <p class="p">&copy; 2024 Ctech Innovation. All rights reserved.</p>
+        </div>
+
+        </div>
+
+
+        <!-------------------------------End Desktop Footer-------------------------->
+
+        <div class="mobile-footer">
+            <div class="input-container">
+                <input type="text" class="text" name="firstname" id="text" placeholder="Enter your email" required>
+                <input type="submit" class="submit" name="submit" value="Subscribe">
+            </div>
+            <div class="contact">
+
+                <h2>Ctech Innovation</h2>
+                <p>Creating tomorrow's solution today!</p><br>
+                <ul>
+                    <li> <a href="#">257 Kopanong Section</a> </li>
+                    <li> <a href="#">Pretoria</a> </li>
+                    <li> <a href="#">2889</a> </li>
+                    <li> <a href="#">078 021 9816</a> </li>
+                    <li> <a href="#">info@ctech-innovation.co.za</a> </li>
+                </ul>
+
+            </div>
+
+            <div class="links">
+                <h2>Quick Links</h2>
+
+                <ul>
+                    <li><a href="#home"> HOME</a> </li>
+                    <li><a href="#services"> SERVICES</a> </li>
+                    <li><a href="#about"> ABOUT</a> </li>
+                    <li><a href="#contact"> CONTACT</a> </li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <h2>Social Media</h2>
+
+                <ul>
+                    <li> <a href="#whatsapp">WhatsApp</a> </li>
+                    <li> <a href="#whatsapp">Facebook</a> </li>
+                    <li> <a href="#whatsapp">Instagram</a> </li>
+                    <li> <a href="#whatsapp">Linkedin</a> </li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024 Ctech Innovation. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+    </body>
+</html>
